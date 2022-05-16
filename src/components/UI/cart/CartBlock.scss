@@ -1,9 +1,11 @@
 .cart-block {
-  display: flex;
-  align-items: center;
-  position: relative;
-  &__icon {
+  &__link {
+    display: flex;
+    align-items: center;
+    position: relative;
     cursor: pointer;
+  }
+  &__icon {
     position: relative;
   }
   &__title {

@@ -3,6 +3,7 @@ import './styles/App.scss'
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import HomePage from "./pages/home-page/HomePage";
 import Header from "./components/header/Header";
+import CartPage from "./pages/cart-page/CartPage";
 
 const App = () => {
     return (
@@ -11,6 +12,7 @@ const App = () => {
                 <Header/>
                 <Routes>
                     <Route path='/' element={ <HomePage/> }/>
+                    <Route path='/cart' element={ <CartPage/> }/>
                 </Routes>
             </div>
         </BrowserRouter>

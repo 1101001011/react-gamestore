@@ -1,0 +1,9 @@
+.game-item__genre {
+  padding: 2px 8px;
+  font-size: 12px;
+  background-color: rgb(66, 66, 66);
+  border-radius: 10px;
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+}

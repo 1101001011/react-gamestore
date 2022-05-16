@@ -3,21 +3,19 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
+  &__link-home {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  &__cart-btn {
+    justify-content: flex-end;
+  }
 }
 
 .wrapper {
   display: flex;
   flex-grow: 1;
   padding: 25px 0;
-}
-
-.header__link-home {
-  color: #fff;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.header__cart-btn {
-  justify-content: flex-end;
 }

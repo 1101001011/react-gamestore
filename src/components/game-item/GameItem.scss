@@ -1,14 +1,13 @@
 .game-item {
-  margin: 0 20px 20px 20px;
-  width: 27%;
-  height: 300px;
+  margin: 0 25px 30px 25px;
+  width: 28%;
   background-color: rgb(36, 37, 41);
   border-radius: 15px;
   cursor: pointer;
   position: relative;
 
   &__details {
-    padding: 10px 20px;
+    padding: 10px 20px 20px 20px;
   }
   &__title {
     font-size: 18px;
@@ -16,17 +15,13 @@
   }
   &__genres {
     margin-top: 10px;
+    font-size: 14px;
     display: flex;
     flex-wrap: wrap;
   }
   &__description {
     margin-top: 10px;
     font-size: 14px;
-  }
-  &__buy {
-    position: relative;
-    right: 0;
-    bottom: -12px;
   }
 }
 
