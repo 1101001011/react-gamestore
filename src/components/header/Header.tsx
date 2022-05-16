@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
-import CartBlock from "../cart/CartBlock";
+import CartBlock from "../UI/cart/CartBlock";
 import './Header.scss'
 
 const Header = () => {
