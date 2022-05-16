@@ -1,0 +1,14 @@
+.cart-block {
+  display: flex;
+  align-items: center;
+  position: relative;
+  &__icon {
+    cursor: pointer;
+    position: relative;
+  }
+  &__title {
+    margin-left: 10px;
+    color: #fff;
+    font-size: 18px;
+  }
+}

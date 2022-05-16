@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(25, 26, 28);
+  font-family: -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarella', 'Fira Sans',
+    'Droid Sans', 'HelveticaNeue', sans-serif;
+}
+
+.App {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 40px;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
