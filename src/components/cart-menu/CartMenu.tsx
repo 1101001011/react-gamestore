@@ -1,6 +1,7 @@
 import React from 'react';
 import {Game} from "../../pages/home-page/games";
 import MyButton from "../UI/button/MyButton";
+import CartItem from "../cart-item/CartItem";
 import './CartMenu.scss'
 
 interface CartMenuProps {
@@ -13,7 +14,9 @@ const CartMenu: React.FC<CartMenuProps> = ({items, totalPrice, onClick}) => {
     return (
         <div className='cart-menu'>
             <div className="cart-menu__games-list">
-                { items.length > 0 ? items.map(item => item.title) : 'Корзина пуста'}
+                { items.length > 0 ? items.map(item => <CartItem item={item} key={item.id}/>)
+                    : 'Корзина пуста'
+                }
             </div>
             { items.length > 0 ?
                 <div className='cart-menu__arrange'>
