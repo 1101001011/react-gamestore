@@ -1,4 +1,7 @@
 .cart-block {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
   &__link {
     display: flex;
     align-items: center;

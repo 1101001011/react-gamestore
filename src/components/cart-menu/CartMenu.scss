@@ -1,0 +1,28 @@
+.cart-menu {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(36, 37, 41);
+  width: 45%;
+  padding: 20px;
+  z-index: 2;
+  border-radius: 15px;
+
+  &__games-list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__arrange {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  &__total-price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+}

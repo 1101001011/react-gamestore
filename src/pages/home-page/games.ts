@@ -63,4 +63,31 @@ export const GAMES: Game[] = [
         id: 6,
         description: 'Assassin’s Creed Valhalla — мультиплатформенная компьютерная игра в жанре action/RPG, разработанная студией Ubisoft Montreal под издательством компании Ubisoft. Является двенадцатой игрой в серии игр Assassin’s Creed.'
     },
+    {
+        image: '/images/assassins_creed_valhalla.png',
+        title: 'Assassin’s Creed Valhalla',
+        genres: ['Паркур', 'РПГ', 'Открытый мир'],
+        video: 'https://www.youtube.com/embed/ssrNcwxALS4',
+        price: 2863,
+        id: 7,
+        description: 'Assassin’s Creed Valhalla — мультиплатформенная компьютерная игра в жанре action/RPG, разработанная студией Ubisoft Montreal под издательством компании Ubisoft. Является двенадцатой игрой в серии игр Assassin’s Creed.'
+    },
+    {
+        image: '/images/assassins_creed_valhalla.png',
+        title: 'Assassin’s Creed Valhalla',
+        genres: ['Паркур', 'РПГ', 'Открытый мир'],
+        video: 'https://www.youtube.com/embed/ssrNcwxALS4',
+        price: 2863,
+        id: 8,
+        description: 'Assassin’s Creed Valhalla — мультиплатформенная компьютерная игра в жанре action/RPG, разработанная студией Ubisoft Montreal под издательством компании Ubisoft. Является двенадцатой игрой в серии игр Assassin’s Creed.'
+    },
+    {
+        image: '/images/assassins_creed_valhalla.png',
+        title: 'Assassin’s Creed Valhalla',
+        genres: ['Паркур', 'РПГ', 'Открытый мир'],
+        video: 'https://www.youtube.com/embed/ssrNcwxALS4',
+        price: 2863,
+        id: 9,
+        description: 'Assassin’s Creed Valhalla — мультиплатформенная компьютерная игра в жанре action/RPG, разработанная студией Ubisoft Montreal под издательством компании Ubisoft. Является двенадцатой игрой в серии игр Assassin’s Creed.'
+    },
 ]
