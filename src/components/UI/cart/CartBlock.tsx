@@ -1,15 +1,16 @@
 import React from 'react';
 import {RiShoppingCartLine} from "react-icons/ri";
 import './CartBlock.scss'
-import {NavLink} from "react-router-dom";
+import {useTypedSelector} from "../../../hooks/useTypedSelector";
 
 const CartBlock = () => {
+    const {items} = useTypedSelector(state => state.cart)
+    const totalPrice = items.reduce((acc, item) => acc += item.price, 0)
+
     return (
         <div className='cart-block'>
-            <NavLink to='/cart' className='cart-block__link'>
-                <RiShoppingCartLine size={25} className='cart-block__icon'/>
-                <span className='cart-block__title'>2300 руб.</span>
-            </NavLink>
+            <RiShoppingCartLine size={25} className='cart-block__icon'/>
+            <span className='cart-block__title'>{totalPrice} руб.</span>
         </div>
     );
 };
