@@ -30,6 +30,16 @@ const GameItemReveal: React.FC<{id: number}> = ({id}) => {
                             {game.genres.map(genre => <GameGenre genre={genre} key={genre}/>)}
                         </div>
                     </motion.div>
+                    <div className='game-item__video'>
+                        <iframe
+                            height='450px'
+                            width='100%'
+                            frameBorder='none'
+                            src={game.video}
+                            title='YouTube Video Player'
+                        >
+                        </iframe>
+                    </div>
                     <motion.div
                         className='game-item__description'
                         initial={{opacity: 0}}
