@@ -1,13 +1,18 @@
 import React from 'react';
-import {GAMES} from "./games";
-import GameItem from "../../components/game-item/GameItem";
-import './HomePage.scss'
+import {useParams} from "react-router-dom";
+import GamesList from "../../components/games-list/GamesList";
+import {AnimatePresence} from "framer-motion";
+import GameItemReveal from "../../components/game-item/GameItemReveal";
 
 const HomePage = () => {
+    const {id} = useParams()
     return (
-        <div className='home-page'>
-            {GAMES.map(game => <GameItem game={game} key={game.id}/>)}
-        </div>
+        <>
+            <GamesList/>
+            <AnimatePresence>
+                {id && <GameItemReveal id={parseInt(id)}/>}
+            </AnimatePresence>
+        </>
     );
 };
 

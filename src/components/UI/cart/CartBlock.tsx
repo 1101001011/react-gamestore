@@ -19,21 +19,17 @@ const CartBlock = () => {
     }
 
     return (
-        <div className='cart-block'>
+        <div className='cart-block' onClick={() => setIsCartMenuVisible(!isCartMenuVisible)}>
             <ItemsQuantity quantity={items.length}/>
             { /* cart icon from react-icons*/ }
-            <MdOutlineShoppingCart
-                size={26}
-                className='cart-block__icon'
-                onClick={() => setIsCartMenuVisible(!isCartMenuVisible)}
-            />
-            {/*{totalPrice > 0 ? <span className='cart-block__title'>{totalPrice} руб.</span>*/}
-            {/*    : null*/}
-            {/*}*/}
-            {isCartMenuVisible && <CartMenu
-                                    items={items}
-                                    totalPrice={totalPrice}
-                                    onClick={orderHandler} />}
+            <MdOutlineShoppingCart size={26} className='cart-block__icon'/>
+            {totalPrice > 0
+                ? <span className='cart-block__title'>{totalPrice} руб.</span>
+                : null
+            }
+            {isCartMenuVisible &&
+                <CartMenu items={items} totalPrice={totalPrice} onClick={orderHandler}/>
+            }
         </div>
     );
 };

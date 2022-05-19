@@ -1,27 +1,124 @@
+.game {
+  position: relative;
+  height: 300px;
+}
+
 .game-item {
-  margin: 0 25px 30px 25px;
-  width: 28%;
+  position: relative;
   background-color: rgb(36, 37, 41);
   border-radius: 15px;
-  cursor: pointer;
-  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 
-  &__details {
-    padding: 10px 20px 20px 20px;
+  .open & {
+    max-width: 700px;
+    height: auto;
+    margin: 40px auto;
+    overflow: hidden;
+    pointer-events: auto;
+
+    & img {
+      background-size: cover;
+      height: auto;
+    }
+    & a {
+      pointer-events: none;
+    }
+  }
+  &__container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  &__container.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 1;
+    pointer-events: none;
+  }
+  &__content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 8px 20px 20px 20px;
+    color: #fff;
+    .open & {
+      padding: 15px 30px 30px 30px
+    }
   }
   &__title {
-    font-size: 18px;
     font-weight: bold;
+    font-size: 18px;
+    .open & {
+      font-size: 40px;
+    }
   }
   &__genres {
     margin-top: 10px;
     font-size: 14px;
     display: flex;
     flex-wrap: wrap;
+    color: #fff;
   }
   &__description {
-    margin-top: 10px;
-    font-size: 14px;
+    padding: 110px 30px 10px 30px;
+    color: #fff;
   }
 }
 
+.overlay {
+  z-index: 1;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  will-change: opacity;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+
+  & a {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .game-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .game-item:nth-child(4n + 1),
+  .game-item:nth-child(4n + 4) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .game-item {
+    flex: 1 0 100%;
+    max-width: 100%;
+    padding: 10px 0;
+  }
+
+  .game-item:nth-child(4n + 1),
+  .game-item:nth-child(4n + 4) {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  .game-item-container.open {
+    padding: 0;
+  }
+}

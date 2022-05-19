@@ -15,10 +15,13 @@ body {
     'Droid Sans', 'HelveticaNeue', sans-serif;
 }
 
+#root {
+  display: flex;
+  justify-content: center;
+}
+
 .App {
   max-width: 1180px;
-  margin: 0 auto;
-  color: #fff;
 }
 
 a {

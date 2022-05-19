@@ -1,9 +1,9 @@
 .cart-menu {
   position: absolute;
   top: 40px;
-  left: -340px;
+  left: -295px;
   background-color: rgb(36, 37, 41);
-  width: 370px;
+  width: 400px;
   padding: 20px;
   z-index: 2;
   border-radius: 15px;
@@ -20,5 +20,6 @@
     display: flex;
     justify-content: space-between;
     margin: 15px 0;
+    color: #fff;
   }
 }

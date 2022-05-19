@@ -1,5 +1,12 @@
 .game-buy {
+  padding: 60px 20px 0 20px;
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  align-items: center;
+  margin-top: 20px;
+  color: #fff;
+
+  .open & {
+    padding: 0 30px 25px 30px;
+  }
 }
