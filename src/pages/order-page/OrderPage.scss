@@ -1,0 +1,18 @@
+.order-page {
+	padding: 0 40px;
+
+	&__default {
+		color: #fff;
+	}
+	&__list {
+		color: #fff;
+	}
+	&__total {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&-price {
+			color: #888888;
+		}
+	}
+}

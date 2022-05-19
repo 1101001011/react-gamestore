@@ -1,9 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -23,6 +17,13 @@
   background: #555;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
 html {
   overflow-x: hidden;
   margin-right: calc(-1 * (100vw - 100%));
@@ -34,13 +35,14 @@ body {
     'Droid Sans', 'HelveticaNeue', sans-serif;
 }
 
-#root {
-  display: flex;
-  justify-content: center;
-}
+//#root {
+//  display: flex;
+//  justify-content: center;
+//}
 
 .App {
   max-width: 1180px;
+  margin: 0 auto
 }
 
 a {

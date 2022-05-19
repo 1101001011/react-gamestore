@@ -5,7 +5,7 @@ type btnType = 'primary' | 'secondary'
 
 interface MyButtonProps {
     type: btnType
-    onClick: (e: React.MouseEvent<HTMLButtonElement>) => void
+    onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void
     children: string
 }
 
