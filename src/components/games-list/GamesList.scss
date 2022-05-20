@@ -1,6 +1,7 @@
 .games-list {
   padding: 0 40px;
   display: grid;
+  justify-content: center;
   grid-template-columns: 30% 30% 30%;
   column-gap: 50px;
   row-gap: 30px;

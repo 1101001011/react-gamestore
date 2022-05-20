@@ -1,0 +1,27 @@
+.pagination {
+	margin-top: 30px;
+	padding: 0 50px;
+
+	&__divider {
+		border: none;
+		height: 2px;
+		background: rgb(66, 66, 66);
+	}
+	&__items {
+		display: flex;
+		justify-content: center;
+		margin-top: 10px;
+	}
+	&__item {
+		margin: 0 5px;
+		padding: 5px 10px;
+		color: #fff;
+		font-size: 18px;
+		border-radius: 5px;
+		cursor: pointer;
+
+		&:hover {
+			background-color: rgb(66, 66, 66);
+		}
+	}
+}
