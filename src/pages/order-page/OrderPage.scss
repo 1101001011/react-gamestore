@@ -2,7 +2,9 @@
 	padding: 0 40px;
 
 	&__default {
-		color: #fff;
+		color: #888888;
+		display: flex;
+		justify-content: center;
 	}
 	&__list {
 		color: #fff;

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Game} from '../../pages/home-page/games';
 import './OrderItem.scss'
-import {AiOutlineClose} from 'react-icons/ai';
+import {IoIosCloseCircleOutline} from 'react-icons/io';
 import {useAppDispatch} from '../../hooks/useAppDispatch';
 import {removeItemFromCart} from '../../store/reducers/cartReducer';
 
@@ -25,7 +25,7 @@ const OrderItem: React.FC<{game: Game}> = ({game}) => {
                     <span>{game.price} руб.</span>
                 </div>
             </div>
-            <AiOutlineClose
+            <IoIosCloseCircleOutline
                 className='order-item__delete-icon'
                 size={26}
                 onClick={removeHandle}
