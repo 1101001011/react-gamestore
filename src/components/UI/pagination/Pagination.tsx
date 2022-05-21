@@ -21,6 +21,7 @@ const Pagination: React.FC<PaginationProps> = ({page, setPage}) => {
                         style={p === page
                             ? {backgroundColor: 'rgb(66, 66, 66)'}
                             : {backgroundColor: ''}}
+                        key={p}
                     >
                         {p}
                     </div>

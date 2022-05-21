@@ -1,9 +1,9 @@
 import React from 'react';
-import {Game} from '../../pages/home-page/games';
-import './OrderItem.scss'
+import {Game} from '../../types/game';
 import {IoIosCloseCircleOutline} from 'react-icons/io';
 import {useAppDispatch} from '../../hooks/useAppDispatch';
 import {removeItemFromCart} from '../../store/reducers/cartReducer';
+import './OrderItem.scss'
 
 const OrderItem: React.FC<{game: Game}> = ({game}) => {
     const dispatch = useAppDispatch()

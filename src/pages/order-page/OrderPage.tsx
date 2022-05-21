@@ -14,7 +14,7 @@ const OrderPage = () => {
     return (
         <div className='order-page'>
             <div className='order-page__list'>
-                {items.map(item => <OrderItem game={item}/>)}
+                {items.map(item => <OrderItem game={item} key={item.id}/>)}
             </div>
             <div className='order-page__total'>
                 <div className='order-page__total-price'>

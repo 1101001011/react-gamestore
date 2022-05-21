@@ -1,5 +1,5 @@
 import React from 'react';
-import {Game} from "../../pages/home-page/games";
+import {Game} from '../../types/game';
 import MyButton from "../UI/button/MyButton";
 import CartItem from "../cart-item/CartItem";
 import './CartMenu.scss'

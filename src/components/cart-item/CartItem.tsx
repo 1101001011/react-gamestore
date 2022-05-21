@@ -1,5 +1,5 @@
 import React from 'react';
-import {Game} from "../../pages/home-page/games";
+import {Game} from '../../types/game';
 import './CartItem.scss'
 
 interface CartItemProps {
@@ -13,9 +13,6 @@ const CartItem: React.FC<CartItemProps> = ({item}) => {
             <div className="cart-item__title">
                 {item.price} руб.
             </div>
-            {/*<div className="cart-item__close">*/}
-            {/*    &times;*/}
-            {/*</div>*/}
         </div>
     );
 };

@@ -1,12 +1,4 @@
-export interface Game {
-    image: string
-    title: string,
-    genres: string[],
-    price: number,
-    video: string,
-    id: number,
-    description: string
-}
+import {Game} from '../../types/game';
 
 export const GAMES: Game[] = [
     {

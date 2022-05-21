@@ -1,4 +1,4 @@
-import {Game} from "../pages/home-page/games";
+import {Game} from './game';
 
 export interface CartState {
     items: Game[]

@@ -19,7 +19,7 @@ const GameItemReveal: React.FC<{id: number}> = ({id}) => {
                 style={{ pointerEvents: 'auto' }}
                 className='overlay'
             >
-                <NavLink to={'/'}/>
+                <NavLink to={'/games'}/>
             </motion.div>
             <div className='game-item__container open'>
                 <motion.div className='game-item' layoutId={`game-item-${game.id}`}>

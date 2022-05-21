@@ -1,5 +1,5 @@
 import React from 'react';
-import {Game} from '../../pages/home-page/games';
+import {Game} from '../../types/game';
 import GameCover from '../game-cover/GameCover';
 import GameBuy from '../game-buy/GameBuy';
 import GameGenre from '../game-genre/GameGenre';

@@ -15,7 +15,7 @@ const GameCover: React.FC<GameCoverProps> = ({image, id}) => {
             layoutId={`game-cover-${id}`}
         >
             <img src={image} alt=''/>
-            <NavLink to={`${id}`} className='game-cover__open-link'/>
+            <NavLink to={`/games/${id}`} className='game-cover__open-link'/>
         </motion.div>
     );
 };
